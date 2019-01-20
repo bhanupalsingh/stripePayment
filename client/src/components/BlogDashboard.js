@@ -1,11 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import SurveyList from './surveys/SurveyList';
+import BlogList from './blogs/BlogList';
+//import SurveyList from './surveys/SurveyList';
 
-const Dashboard = () => {
+const BlogDashboard = () => {
   return (
     <div>
-      <SurveyList />
+      <BlogList />
       <div className="fixed-action-btn">
         <Link to="/surveys/new" className="btn-floating btn-large red">
           <i className="material-icons">add</i>
@@ -18,4 +19,4 @@ const Dashboard = () => {
   );
 };
 
-export default Dashboard;
+export default BlogDashboard;
